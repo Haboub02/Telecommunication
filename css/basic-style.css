@@ -1,0 +1,212 @@
+/*ce fichier est un fichier basic pour la decoration de la partie utilisée dans toutes les pages de ce site Web.*/
+
+/*cette partie est reservée pour les animations utulisées dans se cite*/
+
+@keyframes dropdown{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes zoom{
+    1%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+
+}
+
+@keyframes animation{
+    0%{
+        transform: translateY(15px);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+
+/*cette partie est reservée pour le style d'affichage de se cite*/
+body{
+    margin:0;
+}
+
+nav{
+    background-color:white;
+    height:50px;
+    width:100%;
+    margin:0;
+    padding:0px 0px 0px 40px;
+    position:fixed;
+    top:0;
+    z-index:2;
+}
+
+nav img{
+    width:250px;
+    height:50px;
+    position:absolute;
+}
+
+nav ul{
+    list-style-type:none;
+    text-align:center;
+    padding:0px;
+    margin:0px 0px 0px 300px;
+}
+
+nav li{
+    float:left;
+    width:150px;
+    background-color:white;
+    position:relative;
+}
+
+nav li a{
+    display:block;
+    background-color:white;
+    color:black;
+    text-decoration:none;
+    padding:15px;
+}
+
+nav ul li ul{
+    display:none;
+    margin:0px;
+    width:135px;
+}
+
+nav hr{
+    background-color:rgb(161,45,30);
+    height:2px;
+    margin:50px 0px 0px -40px;
+    overflow: visible;
+}
+
+nav ul li:hover ul{
+    display:block;
+    padding:0;
+    position:absolute;
+    animation: dropdown 1s;
+}
+
+nav a:hover,nav a:active{
+    color:#FF8925;
+    background:#EEEEEE;
+    z-index:2;
+}
+
+article{
+    margin:40px 0px 0px 0px;
+    padding:20px;
+    background-image:url("../images/Backgrounds/article.jpg");
+    animation:animation 0.7s;
+}
+
+article h1{
+    font-size:50px;
+    color:rgb(161,131,13);
+}
+
+article p{
+    font-size:20px;
+    color:rgb(110,87,0);
+}
+
+article table td{
+    font-size:20px;
+    color:rgb(110,87,0);
+}
+
+article table td{
+    width:33%;
+    padding:8px;
+    overflow:hidden;
+}
+
+article table h4{
+    color:orange;
+    font-size:30px;
+    position:relative;
+    z-index:1;
+    
+}
+
+article table input{
+    position: relative;
+    transform: translate(65%, -150%);
+    background-color:transparent;
+    color: gainsboro;
+    font-size: 25px;
+    padding: 12px 24px;
+    border: 5px solid gray;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    z-index:1;
+}
+article table div{
+    border-radius:5px;
+    overflow:hidden;
+}
+
+article table input:hover{
+    background-color:gray;
+}
+
+article table div img:hover{
+    animation:zoom 100s;
+    z-index:0;
+    border:5px;
+}
+
+footer{
+    background-image:url("../images/Backgrounds/footer.png");
+    width:100%; 
+    height:275px;
+    animation:animation 1s;
+}
+
+footer table tr td{
+    padding:5px 15px;
+    color:rgb(212,212,212);
+}
+
+footer table tr td h4{
+    color:#FF8925;
+}
+
+footer table tr td ul{
+   list-style:none;
+}
+
+footer table tr td input{
+    margin:0px -4px 0px 0px;
+    padding:0px 5px;
+    border:none;
+    height:35px;
+}
+
+footer img{
+    width:20px;
+    height:20px;
+    border-radius:5px;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 70vh; 
+    width: 100%;
+}
+
+.question {
+    font-weight: bold;
+}
